@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/divider_row"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/etTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/edit_view"
+                android:hint="目标" />
+
+
+            <EditText
+                android:id="@+id/etDescribe"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                style="@style/edit_view"
+                android:singleLine="false"
+                android:hint="描述" />
+
+            <View style="@style/cellRowDiv" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlExpectTime"
+                style="@style/rl_row">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="预期" />
+
+                <TextView
+                    android:id="@+id/tvExpectTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <View style="@style/div_center" />
+
+            <RelativeLayout
+                android:id="@+id/rlFrequency"
+                style="@style/rl_row">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="频次" />
+
+                <TextView
+                    android:id="@+id/tvFrequency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <View style="@style/cellRowDiv" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlCreateTime"
+                style="@style/rl_row">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="创建时间" />
+
+                <TextView
+                    android:id="@+id/tvCreateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

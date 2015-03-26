@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="wrap_content">
+
+    <View style="@style/cellRowDiv" />
+
+
+    <LinearLayout
+        style="@style/cellRow"
+        android:id="@+id/llBg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlTop"
+            android:layout_width="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/flagIcon"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <com.malinskiy.materialicons.widget.IconTextView
+                android:text="{md-more-vert}"
+                android:id="@+id/operate"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:background="@drawable/card_sel"
+                style="@style/cellSwipLayout" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlLine1"
+                android:layout_toLeftOf="@+id/operate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvStopTime"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="tvStopTime"
+                    android:padding="1dp"
+                    android:visibility="gone"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/tvStopTime"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    android:text="tvTitle"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_below="@+id/rlLine1"
+                android:layout_toLeftOf="@+id/operate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tvTag"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray"
+                    android:visibility="gone"
+                    android:text="tvTag"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvSpendTime"
+                    android:layout_width="wrap_content"
+                    android:layout_toLeftOf="@+id/tvTag"
+                    android:text="tvSpendTime"
+                    android:visibility="gone"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:layout_below="@+id/rlTop"
+            android:id="@+id/number_progress_bar"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

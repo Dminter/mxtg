@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="wrap_content">
+    <View
+        android:id="@+id/viewDiv"
+        style="@style/cellRowDiv" />
+    <TextView
+        android:id="@+id/tvTop"
+        android:layout_width="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="XXX"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        style="@style/cellRow"
+        android:id="@+id/llBg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlTop"
+            android:layout_width="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/flagIcon"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <com.malinskiy.materialicons.widget.IconTextView
+                android:text="{md-more-vert}"
+                android:id="@+id/operate"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:background="@drawable/card_sel"
+                style="@style/cellSwipLayout" />
+
+
+            <LinearLayout
+                android:layout_toLeftOf="@+id/operate"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="fill_parent"
+                    android:textSize="16sp"
+                    android:text="tvTitle"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvStopTime"
+                        android:layout_width="wrap_content"
+                        android:text="tvStopTime"
+                        android:textSize="12sp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tvSpendTime"
+                        android:layout_width="wrap_content"
+                        android:text="tvSpendTime"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/gray"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvTag"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray"
+                    android:text="tvTag"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

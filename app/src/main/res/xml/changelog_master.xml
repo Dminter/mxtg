@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelog>
+
+    <release
+        version="0.2"
+        versioncode="2">
+        <change>界面优化</change>
+        <change>add 日常统计</change>
+        <change>add 目标排序</change>
+        <change>add 时光机单行删除功能，按日展示功能</change>
+        <change>add 已完成按日翻页展示功能，按日期选择功能</change>
+        <change>add menu菜单功能介绍按钮</change>
+        <change>bug修复</change>
+    </release>
+    <release
+        version="0.1"
+        versioncode="1">
+        <change>时光一去不复返</change>
+        <change>一次只做一件事，记录耗时，认真完成</change>
+    </release>
+</changelog>
