@@ -7,7 +7,8 @@
 惜时和番茄工作法很类似，但宽松很多，允许自由设定时间及暂停，强调专注一件事，应该再加个滴答声，让人神经紧绷
 http://www.coolapk.com/apk/com.zncm.mxtg
 
-![Alt text](/path/to/img.jpg)
-![Alt text](/path/to/img.jpg)
-![Alt text](/path/to/img.jpg)
-![Alt text](/path/to/img.jpg)
+![img1](/img/img1.png)
+![img2](/img/img2.png)
+![img3](/img/img3.png)
+![img4](/img/img4.png)
+![img5](/img/img5.png)
